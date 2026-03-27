@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatedSection } from "../components/AnimatedSection";
-import { MessageCircle, Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { MessageCircle, GitHub, LinkedIn, Mail, ArrowUpRight } from "lucide-react";  // <-- Corrigido aqui
 import { motion } from "framer-motion";
 
 export function Contact() {
@@ -59,7 +59,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="group flex items-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors"
             >
-              <Github className="w-5 h-5" />
+              <GitHub className="w-5 h-5" />  {/* <-- Corrigido */}
               <span className="border-b border-transparent group-hover:border-emerald-400 transition-colors">
                 GitHub
               </span>
@@ -71,7 +71,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="group flex items-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors"
             >
-              <Linkedin className="w-5 h-5" />
+              <LinkedIn className="w-5 h-5" />  {/* <-- Corrigido */}
               <span className="border-b border-transparent group-hover:border-emerald-400 transition-colors">
                 LinkedIn
               </span>

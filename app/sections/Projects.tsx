@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatedSection, StaggerContainer, StaggerItem } from "../components/AnimatedSection";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, GitHub } from "lucide-react";  // <-- Corrigido aqui
 
 const projects = [
   {
@@ -94,7 +94,7 @@ export function Projects() {
                           <ExternalLink className="w-5 h-5" />
                         </button>
                         <button className="p-3 bg-slate-900/90 rounded-full text-slate-100 hover:text-emerald-400 transition-colors">
-                          <Github className="w-5 h-5" />
+                          <GitHub className="w-5 h-5" />  {/* <-- Corrigido */}
                         </button>
                       </div>
                     </div>
