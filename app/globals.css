@@ -1,66 +1,86 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --foreground-rgb: 248, 250, 252;
-  --background-rgb: 2, 6, 23;
+@theme {
+  --color-slate-950: #020617;
+  --color-slate-900: #0f172a;
+  --color-slate-850: #0b1221;
+  --color-slate-800: #1e293b;
+  
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+  --animate-slide-up: slideUp 0.5s ease-out forwards;
+  --animate-mesh-move: meshMove 20s ease infinite;
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes meshMove {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -30px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+  }
 }
 
 @layer base {
   body {
-    @apply bg-slate-950 text-slate-100;
+    background-color: #020617;
+    color: #f8fafc;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
   ::selection {
-    @apply bg-emerald-500/30 text-emerald-100;
+    background-color: rgba(16, 185, 129, 0.3);
+    color: #d1fae5;
+  }
+  
+  html {
+    scroll-behavior: smooth;
   }
 }
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent;
+    background: linear-gradient(to right, #34d399, #2dd4bf, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .glass-card {
-    @apply bg-slate-900/50 backdrop-blur-xl border border-slate-800/50 rounded-2xl;
+    background-color: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(30, 41, 59, 0.5);
+    border-radius: 1rem;
   }
-}
-
-/* Animated Gradient Mesh */
-.gradient-mesh {
-  background: 
-    radial-gradient(at 40% 20%, hsla(168,70%,40%,0.15) 0px, transparent 50%),
-    radial-gradient(at 80% 0%, hsla(189,60%,30%,0.1) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(340,60%,30%,0.1) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(168,70%,40%,0.1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(189,60%,30%,0.15) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(168,70%,40%,0.1) 0px, transparent 50%);
-  animation: meshMove 20s ease infinite;
-}
-
-@keyframes meshMove {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(30px, -30px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-}
-
-/* Grid Pattern */
-.grid-pattern {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 50px 50px;
-}
-
-/* Glow Effects */
-.glow-emerald {
-  box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.3);
-}
-
-/* Smooth Scroll Behavior */
-html {
-  scroll-behavior: smooth;
+  
+  .gradient-mesh {
+    background: 
+      radial-gradient(at 40% 20%, hsla(168,70%,40%,0.15) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(189,60%,30%,0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(340,60%,30%,0.1) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, hsla(168,70%,40%,0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(189,60%,30%,0.15) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, hsla(168,70%,40%,0.1) 0px, transparent 50%);
+    animation: meshMove 20s ease infinite;
+  }
+  
+  .grid-pattern {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .glow-emerald {
+    box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.3);
+  }
 }
 
 /* Custom Scrollbar */
