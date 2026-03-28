@@ -91,7 +91,7 @@ export function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
           <a
-            href="https://wa.me/5551999999999"
+            href="https://wa.me/5551997529716"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-lg rounded-full transition-all duration-300 hover:scale-105 glow-emerald overflow-hidden"

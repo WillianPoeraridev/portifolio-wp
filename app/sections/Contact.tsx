@@ -24,7 +24,7 @@ export function Contact() {
         {/* Main CTA */}
         <AnimatedSection delay={0.2}>
           <motion.a
-            href="https://wa.me/5551999999999"
+            href="https://wa.me/5551997529716"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -85,7 +85,7 @@ export function Contact() {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-600 text-sm">
               <div className="flex items-center gap-2">
                 <span className="font-bold text-slate-400">WP Dev Lab</span>
-                <span>© 2024</span>
+                <span>© 2025</span>
               </div>
               <p>Construído com Next.js, Tailwind & Café</p>
             </div>

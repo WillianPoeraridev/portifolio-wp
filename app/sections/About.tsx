@@ -38,7 +38,7 @@ export function About() {
           {/* Text Content */}
           <AnimatedSection>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Desenvolvedor <span className="gradient-text">autodidata</span> com sistemas em produção
+              Da estratégia ao código — <span className="gradient-text">sistemas reais</span> em produção
             </h2>
             <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
               <p>
