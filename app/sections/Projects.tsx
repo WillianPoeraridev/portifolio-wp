@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatedSection, StaggerContainer, StaggerItem } from "../components/AnimatedSection";
-import { ExternalLink, GitHub } from "lucide-react";  // <-- Corrigido aqui
+import { ExternalLink, Github } from "lucide-react";  // <-- Corrigido
 
 const projects = [
   {
