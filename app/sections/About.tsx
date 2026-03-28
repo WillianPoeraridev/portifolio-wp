@@ -42,15 +42,13 @@ export function About() {
             </h2>
             <div className="space-y-4 text-slate-400 text-lg leading-relaxed">
               <p>
-                Não construo protótipos para portfólio. Construo ferramentas que resolvem problemas reais de negócios reais.
+                Processo direto: entendo o seu negócio, desenho a solução e entrego funcionando. O que outros levam semanas, eu entrego em <strong className="text-slate-200">dias</strong> — com você acompanhando cada etapa.
               </p>
               <p>
-                Uso IA como par de programação para entregar em <strong className="text-slate-200">dias</strong> o que outros desenvolvedores levam semanas. 
-                Isso significa mais velocidade para você, sem sacrificar qualidade.
+                Cada sistema que entrego já nasce em produção — hospedagem, domínio e banco de dados configurados. Não existe &quot;falta só subir&quot;. Você recebe pronto pra usar.
               </p>
               <p>
-                Especializado em ecossistemas React modernos, arquitetura serverless e bancos de dados PostgreSQL. 
-                Cada linha de código é escrita pensando em escalabilidade e manutenibilidade.
+                Depois da entrega, continuo disponível. Canal direto comigo pra ajustes, melhorias e suporte. Sem ticket, sem fila, sem robô.
               </p>
             </div>
           </AnimatedSection>
